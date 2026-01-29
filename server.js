@@ -64,6 +64,22 @@ async function loadSets() {
 loadCards();
 loadSets();
 
+// Root endpoint - API info
+app.get('/', (req, res) => {
+  res.json({
+    name: 'Gundam Cards API',
+    version: '1.0.0',
+    status: 'online',
+    endpoints: {
+      health: '/health',
+      cards: '/api/cards',
+      cardsBySet: '/api/cards/set/:setId',
+      sets: '/api/sets',
+      stats: '/api/stats'
+    }
+  });
+});
+
 // Health check
 app.get('/health', (req, res) => {
   res.json({ 
