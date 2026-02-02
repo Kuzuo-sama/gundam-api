@@ -73,7 +73,8 @@ Retorna estatísticas gerais
 {
   "totalCards": 800,
   "totalSets": 15,
-  "lastUpdated": "..."
+  "lastUpdated": "...",
+  "https://www.gundam-gcg.com/en/images/cards/card/": 0
 }
 ```
 
